@@ -1,0 +1,57 @@
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 4rem;
+}
+ul { list-style-type: none; }
+li { margin: 0.15rem; }
+
+.game-board { margin: 1rem; }
+.board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+.white-square {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 34px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 34px;
+}
+
+.black-square {
+    background: #000;
+    border: 1px solid #999;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 34px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 34px;
+}
+
+.move-button {
+    padding: 0.1rem;
+    width: 7rem;
+}
+
+.flex-column-wrap {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.flex-row { display: flex; flex-direction: row; }
+
+.h-9-5rem { height: 9.5rem; }
