@@ -18,11 +18,12 @@ export default function Board(props) {
     }
 
     function renderSquare(lineIndex, columnIndex) {
+        squareIndex = 8*lineIndex+columnIndex-1;
         return (
             <Square
-                key={8*lineIndex+columnIndex-1}
-                value={props.squares[8*lineIndex+columnIndex-1]}
-                whenClicked={() => props.whenClicked(8*lineIndex+columnIndex-1)}
+                key={squareIndex}
+                value={props.squares[squareIndex]}
+                whenClicked={() => props.whenClicked(squareIndex)}
                 color={(lineIndex + columnIndex) % 2 == 0?"white-square":"black-square"}
             />
         );
